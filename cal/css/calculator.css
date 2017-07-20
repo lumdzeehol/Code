@@ -1,0 +1,95 @@
+/* 
+* @Author: Marte
+* @Date:   2017-07-20 17:11:23
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-07-20 19:42:00
+*/
+body,ul,ol,dl,li,p,h1,h2,h3,h4,h5,h6,img,button{
+    margin: 0;padding: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#cal{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#calScreen{
+    height: 200px;
+    /*background: blue;*/
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+#pres{
+    font-size: 50px;
+    position: absolute;
+    color: #ddd;
+    right: 0;
+    top: 0;
+}
+#inputting{
+    font-size: 70px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+#cal_zone{
+    flex:1;
+    display:flex;
+}
+
+#num_zone{
+    display:flex;
+    flex-direction: row-reverse;
+    /*justify-content: flex-start;*/
+    flex-wrap: wrap;
+    width:60%;
+    height: 100%;
+    border-left: 1px solid #ddd;
+    /*border-top: 1px solid #ddd;*/
+    box-sizing: border-box;
+}
+
+#op_zone{
+    display:flex;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 100%;
+    /*border-left: 1px solid #ddd;*/
+    /*border-top: 1px solid #ddd;*/
+    box-sizing: border-box;
+}
+button{
+    background:#fff;
+    border:0 none;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: bold;
+}
+.num{
+    width:33.33333333333333%;
+    display:block;
+}
+#num_zone .num_0{
+    width:66.66666666666666%;
+}
+.op,.eqal,.clearScreen{
+    width:50%;
+    /*display:block;*/
+}
+
+/*#op_zone .eqal{
+    height:66.66666666666%;
+        width:50%;
+}*/
+
+
+/*#cal_zone div:last-of-type{
+    width:0;
+
+}*/
